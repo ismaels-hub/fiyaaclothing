@@ -1,0 +1,47 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.brand {
+    text-align: center;
+}
+
+.brand h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    letter-spacing: 8px;
+    color: #000;
+    margin: 0;
+    transition: 0.3s ease;
+}
+
+.brand span {
+    display: block;
+    font-size: 14px;
+    letter-spacing: 6px;
+    color: #777;
+    margin-top: 10px;
+}
+
+/* luxury underline */
+.brand h1::after {
+    content: "";
+    display: block;
+    width: 60px;
+    height: 2px;
+    background: #000;
+    margin: 15px auto 0;
+}
+
+/* hover effect */
+.brand h1:hover {
+    letter-spacing: 12px;
+}
