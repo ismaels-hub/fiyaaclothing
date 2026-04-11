@@ -1,22 +1,224 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FIYAA Clothing</title>
-
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="style.css">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Montserrat:wght@300;500&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FIYAA Clothing</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet" />
 </head>
 <body>
 
-    <div class="brand">
-        <h1>FIYAA</h1>
-        <span>CLOTHING</span>
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">
+      <div class="logo-circle">
+        <img src="Images/fiyaalogotopleft.png" alt="FIYAA Logo" class="logo-img" />
+      </div>
+      <span class="brand-name">fiyaa clothing</span>
     </div>
+    <ul class="nav-links">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#catalogue">Catalogue</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
 
+  <div class="mobile-menu" id="mobileMenu">
+    <ul>
+      <li><a href="#hero" onclick="closeMobileMenu()">Home</a></li>
+      <li><a href="#catalogue" onclick="closeMobileMenu()">Catalogue</a></li>
+      <li><a href="#about" onclick="closeMobileMenu()">About</a></li>
+      <li><a href="#contact" onclick="closeMobileMenu()">Contact</a></li>
+    </ul>
+  </div>
+
+  <section class="hero" id="hero">
+    <div class="hero-bg-text">FIYAA</div>
+    <div class="hero-content">
+      <p class="hero-tagline reveal">SINCE 2006</p>
+      <h1 class="hero-title reveal">
+        <span class="highlight-fiyaa">FIYAA</span>
+      </h1>
+     
+      <a href="#catalogue" class="cta-btn reveal">Explore Collection</a>
+    </div>
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>Scroll</span>
+    </div>
+  </section>
+
+  <div class="marquee-strip">
+    <div class="marquee-track">
+      <span>FIYAA CLOTHING</span><span>✦</span>
+      <span>PREMIUM QUALITY</span><span>✦</span>
+      <span>MODERN STYLE</span><span>✦</span>
+      <span>NEW DELHI</span><span>✦</span>
+      <span>EVERYDAY ESSENTIALS</span><span>✦</span>
+      <span>FIYAA CLOTHING</span><span>✦</span>
+      <span>PREMIUM QUALITY</span><span>✦</span>
+      <span>MODERN STYLE</span><span>✦</span>
+      <span>NEW DELHI</span><span>✦</span>
+      <span>EVERYDAY ESSENTIALS</span><span>✦</span>
+    </div>
+  </div>
+
+  <section class="catalogue" id="catalogue">
+    <div class="section-header reveal">
+      <p class="section-label">The Collection</p>
+      <h2 class="section-title">Our Catalogue</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="catalogue-grid">
+      <div class="catalogue-item reveal">
+        <div class="img-wrapper">
+          <img src="Images/IMG_1604.PNG" alt="Collection Item 1" />
+          <div class="img-overlay"><span>CONTACT US</span></div>
+        </div>
+        <div class="item-info">
+          <p class="item-name">₹***/-</p>
+          <p class="item-tag">CORD SET</p>
+        </div>
+      </div>
+      <div class="catalogue-item reveal">
+        <div class="img-wrapper">
+          <img src="Images/IMG_1599.PNG" alt="Collection Item 2" />
+          <div class="img-overlay"><span>CONTACT US</span></div>
+        </div>
+        <div class="item-info">
+          <p class="item-name">₹***/-</p>
+          <p class="item-tag">TANK TOPS</p>
+        </div>
+      </div>
+      <div class="catalogue-item reveal">
+        <div class="img-wrapper">
+          <img src="Images/IMG_1595.PNG" alt="Collection Item 3" />
+          <div class="img-overlay"><span>CONTACT US</span></div>
+        </div>
+        <div class="item-info">
+          <p class="item-name">₹***/-</p>
+          <p class="item-tag">PANTS</p>
+        </div>
+      </div>
+      <div class="catalogue-item reveal">
+        <div class="img-wrapper">
+          <img src="Images/IMG_1603.PNG" alt="Collection Item 4" />
+          <div class="img-overlay"><span>CONTACT US</span></div>
+        </div>
+        <div class="item-info">
+          <p class="item-name">₹***/-</p>
+          <p class="item-tag">JACKETS</p>
+        </div>
+      </div>
+      <div class="catalogue-item reveal">
+        <div class="img-wrapper">
+          <img src="Images/IMG_1600.JPG" alt="Collection Item 5" />
+          <div class="img-overlay"><span>CONTACT US</span></div>
+        </div>
+        <div class="item-info">
+          <p class="item-name">₹***/-</p>
+          <p class="item-tag">SHIRTS</p>
+        </div>
+      </div>
+      <div class="catalogue-item reveal">
+        <div class="img-wrapper">
+          <img src="Images/IMG_1597.JPG" alt="Collection Item 6" />
+          <div class="img-overlay"><span>CONTACT US</span></div>
+        </div>
+        <div class="item-info">
+          <p class="item-name">₹***/-</p>
+          <p class="item-tag">SHIRTS</p>
+        </div>
+      </div>
+      <div class="catalogue-item reveal">
+        <div class="img-wrapper">
+          <img src="Images/IMG_1596.JPG" alt="Collection Item 7" />
+          <div class="img-overlay"><span>CONTACT US</span></div>
+        </div>
+        <div class="item-info">
+          <p class="item-name">₹***/-</p>
+          <p class="item-tag">SHIRTS</p>
+        </div>
+      </div>
+      <div class="catalogue-item reveal">
+        <div class="img-wrapper">
+          <img src="Images/IMG_1598.JPG" alt="Collection Item 8" />
+          <div class="img-overlay"><span>CONTACT US</span></div>
+        </div>
+        <div class="item-info">
+          <p class="item-name">₹***/-</p>
+          <p class="item-tag">SHIRTS</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="about-inner reveal">
+      <p class="section-label">Our Story</p>
+      <h2 class="about-title">Crafted with<br><em>Purpose</em></h2>
+      <div class="divider"></div>
+      <p class="about-text">
+        At FIYAA Clothing, we believe that what you wear speaks before you do.
+        We blend modern style with premium quality to create everyday essentials
+        that stand out — pieces that are refined yet effortless, bold yet timeless.
+        Born in the heart of New Delhi, every piece carries the spirit of the city
+        and the grace of thoughtful design.
+      </p>
+      <div class="about-pillars">
+        <div class="pillar"><span class="pillar-num">01</span><p>Premium Fabric</p></div>
+        <div class="pillar"><span class="pillar-num">02</span><p>Modern Cuts</p></div>
+        <div class="pillar"><span class="pillar-num">03</span><p>Everyday Wear</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="contact-inner">
+      <div class="section-header reveal">
+        <p class="section-label">Get In Touch</p>
+        <h2 class="section-title light">Find Us</h2>
+        <div class="divider light"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-block reveal">
+          <p class="contact-label">Follow Us</p>
+          <a href="https://instagram.com/fiyaa_clothing12" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="5"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+            Instagram
+          </a>
+          <a href="https://facebook.com/share/1CVnrvZwms/?mibextid=wwXIfr" target="_blank" class="social-link">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+            Facebook
+          </a>
+        </div>
+        <div class="contact-block reveal">
+          <p class="contact-label">Call Us</p>
+          <a href="tel:+919718888668" class="contact-info-link">+91 9818888668</a>
+          <a href="tel:+919818888668" class="contact-info-link">+91 9718888668</a>
+        </div>
+        <div class="contact-block reveal">
+          <p class="contact-label">Visit Us</p>
+          <address>
+            Ground Floor, Shop No. 5,<br>
+            Raza Market, Janpath Lane<br>
+            Connaught Place,<br>
+            New Delhi – 110001
+          </address>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-logo">FIYAA</div>
+    <p class="footer-copy">© FIYAA Clothing. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
